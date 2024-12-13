@@ -1,0 +1,904 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+      162.240.236.192,www.vps-10959947.municipionavirai.com.br,443,tcp,5.0,Medium,70,"Mitigation","Apache HTTP Server UserDir Sensitive Information Disclosure","An information leak occurs on Apache HTTP Server based
+  web servers whenever the UserDir module is enabled. The vulnerability allows an external
+  attacker to enumerate existing accounts by requesting access to their home directory
+  and monitoring the response.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.10766,"CVE-2001-1013",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,63fbb8da-075a-406d-b0e3-f6bbce04782f,"","1) Disable this feature by changing 'UserDir public_html' (or whatever) to
+  'UserDir  disabled'.
+
+  Or
+
+  2) Use a RedirectMatch rewrite rule under Apache -- this works even if there
+  is no such  entry in the password file, e.g.:
+  RedirectMatch ^/~(.*)$ http://example.com/$1
+
+  Or
+
+  3) Add into httpd.conf:
+
+  ErrorDocument 404 http://example.com/sample.html
+
+  ErrorDocument 403 http://example.com/sample.html
+
+  (NOTE: You need to use a FQDN inside the URL for it to work properly).","","","
+Details:
+Apache HTTP Server UserDir Sensitive Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10766)
+Version used: 2023-06-22T10:34:15Z
+","","","DFN-CERT-2014-0315,CB-K14/0304",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,80,tcp,5.0,Medium,70,"Mitigation","Apache HTTP Server UserDir Sensitive Information Disclosure","An information leak occurs on Apache HTTP Server based
+  web servers whenever the UserDir module is enabled. The vulnerability allows an external
+  attacker to enumerate existing accounts by requesting access to their home directory
+  and monitoring the response.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.10766,"CVE-2001-1013",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,08d9b0ec-ff86-45a2-908f-52c5a19ae307,"","1) Disable this feature by changing 'UserDir public_html' (or whatever) to
+  'UserDir  disabled'.
+
+  Or
+
+  2) Use a RedirectMatch rewrite rule under Apache -- this works even if there
+  is no such  entry in the password file, e.g.:
+  RedirectMatch ^/~(.*)$ http://example.com/$1
+
+  Or
+
+  3) Add into httpd.conf:
+
+  ErrorDocument 404 http://example.com/sample.html
+
+  ErrorDocument 403 http://example.com/sample.html
+
+  (NOTE: You need to use a FQDN inside the URL for it to work properly).","","","
+Details:
+Apache HTTP Server UserDir Sensitive Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10766)
+Version used: 2023-06-22T10:34:15Z
+","","","DFN-CERT-2014-0315,CB-K14/0304",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,80,tcp,5.0,Medium,70,"Mitigation","Apache HTTP Server UserDir Sensitive Information Disclosure","An information leak occurs on Apache HTTP Server based
+  web servers whenever the UserDir module is enabled. The vulnerability allows an external
+  attacker to enumerate existing accounts by requesting access to their home directory
+  and monitoring the response.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.10766,"CVE-2001-1013",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,bad3f3f2-c095-40d1-b39e-79025019eb07,"","1) Disable this feature by changing 'UserDir public_html' (or whatever) to
+  'UserDir  disabled'.
+
+  Or
+
+  2) Use a RedirectMatch rewrite rule under Apache -- this works even if there
+  is no such  entry in the password file, e.g.:
+  RedirectMatch ^/~(.*)$ http://example.com/$1
+
+  Or
+
+  3) Add into httpd.conf:
+
+  ErrorDocument 404 http://example.com/sample.html
+
+  ErrorDocument 403 http://example.com/sample.html
+
+  (NOTE: You need to use a FQDN inside the URL for it to work properly).","","","
+Details:
+Apache HTTP Server UserDir Sensitive Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10766)
+Version used: 2023-06-22T10:34:15Z
+","","","DFN-CERT-2014-0315,CB-K14/0304",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,80,tcp,5.0,Medium,70,"Mitigation","Apache HTTP Server UserDir Sensitive Information Disclosure","An information leak occurs on Apache HTTP Server based
+  web servers whenever the UserDir module is enabled. The vulnerability allows an external
+  attacker to enumerate existing accounts by requesting access to their home directory
+  and monitoring the response.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.10766,"CVE-2001-1013",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,b25ac027-ad82-4f4c-8cdb-acd0ced30285,"","1) Disable this feature by changing 'UserDir public_html' (or whatever) to
+  'UserDir  disabled'.
+
+  Or
+
+  2) Use a RedirectMatch rewrite rule under Apache -- this works even if there
+  is no such  entry in the password file, e.g.:
+  RedirectMatch ^/~(.*)$ http://example.com/$1
+
+  Or
+
+  3) Add into httpd.conf:
+
+  ErrorDocument 404 http://example.com/sample.html
+
+  ErrorDocument 403 http://example.com/sample.html
+
+  (NOTE: You need to use a FQDN inside the URL for it to work properly).","","","
+Details:
+Apache HTTP Server UserDir Sensitive Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10766)
+Version used: 2023-06-22T10:34:15Z
+","","","DFN-CERT-2014-0315,CB-K14/0304",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2086,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://mail.vps-10959947.municipionavirai.com.br:2086/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,fdae9489-e3ea-47c7-9f6b-6d37a20c8a84,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2086,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://vps-10959947.municipionavirai.com.br:2086/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,d9ce51a3-3b85-404f-884d-5c4be39901a8,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2082,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://www.vps-10959947.municipionavirai.com.br:2082/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,b6b247aa-7339-4042-b53f-e47ab198e62a,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2082,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://mail.vps-10959947.municipionavirai.com.br:2082/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,ddbd5753-95cf-450f-a18f-7552402a0ce2,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2082,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://vps-10959947.municipionavirai.com.br:2082/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,121c5668-84d4-49e5-99c5-b2874dda59e9,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2095,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://www.vps-10959947.municipionavirai.com.br:2095/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,5320efb0-b2fe-43e3-9a9c-2023413f5217,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2095,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://mail.vps-10959947.municipionavirai.com.br:2095/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,04fc2767-30f3-467b-aa4d-05f4f1ddca06,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2095,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://vps-10959947.municipionavirai.com.br:2095/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,61980fef-db91-4809-b361-f6c9d7721344,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,2086,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://www.vps-10959947.municipionavirai.com.br:2086/:pass
+",1.3.6.1.4.1.25623.1.0.108440,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,3bebfbd2-180c-4e51-a425-c64d677dbe65,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,587,tcp,6.8,Medium,80,"WillNotFix","Exim <= 4.96.2 libspf2 RCE Vulnerability (Sep 2023)","Exim is prone to a remote code execution (RCE) vulnerability
+  in libspf2.","Installed version: 4.96.2
+Fixed version:     None
+
+",1.3.6.1.4.1.25623.1.0.151116,"CVE-2023-42118",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,fa32dfd8-9bec-4f9d-9dd8-832b1d40fecc,"","No known solution was made available for at least one year since
+  the disclosure of this vulnerability. Likely none will be provided anymore. General solution options
+  are to upgrade to a newer release, disable respective features, remove the product or replace the
+  product by another one.","","The specific flaw exists within the parsing of SPF macros. When
+  parsing SPF macros, the process does not properly validate user-supplied data, which can result
+  in an integer underflow before writing to memory. An attacker can leverage this vulnerability to
+  execute code in the context of the service account.","Checks if a vulnerable version is present on the target host.
+Details:
+Exim <= 4.96.2 libspf2 RCE Vulnerability (Sep 2023)
+(OID: 1.3.6.1.4.1.25623.1.0.151116)
+Version used: 2024-10-03T05:05:33Z
+","","","DFN-CERT-2023-2524,DFN-CERT-2023-2369,DFN-CERT-2023-2351,WID-SEC-2023-2505",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,465,tcp,6.8,Medium,80,"WillNotFix","Exim <= 4.96.2 libspf2 RCE Vulnerability (Sep 2023)","Exim is prone to a remote code execution (RCE) vulnerability
+  in libspf2.","Installed version: 4.96.2
+Fixed version:     None
+
+",1.3.6.1.4.1.25623.1.0.151116,"CVE-2023-42118",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,e3a87b8a-e7d1-4eb3-b9dd-6296076cc04e,"","No known solution was made available for at least one year since
+  the disclosure of this vulnerability. Likely none will be provided anymore. General solution options
+  are to upgrade to a newer release, disable respective features, remove the product or replace the
+  product by another one.","","The specific flaw exists within the parsing of SPF macros. When
+  parsing SPF macros, the process does not properly validate user-supplied data, which can result
+  in an integer underflow before writing to memory. An attacker can leverage this vulnerability to
+  execute code in the context of the service account.","Checks if a vulnerable version is present on the target host.
+Details:
+Exim <= 4.96.2 libspf2 RCE Vulnerability (Sep 2023)
+(OID: 1.3.6.1.4.1.25623.1.0.151116)
+Version used: 2024-10-03T05:05:33Z
+","","","DFN-CERT-2023-2524,DFN-CERT-2023-2369,DFN-CERT-2023-2351,WID-SEC-2023-2505",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,21,tcp,4.8,Medium,70,"Mitigation","FTP Unencrypted Cleartext Login","The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Non-anonymous sessions: 331 User openvasvt OK. Password required
+Anonymous sessions:     331 User anonymous OK. Password required
+
+The remote FTP service supports the 'AUTH TLS' command but isn't enforcing the use of it for:
+
+- Non-anonymous sessions
+- Anonymous sessions
+",1.3.6.1.4.1.25623.1.0.108528,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,cb9a9403-30ca-43c3-9987-d56fe93e5f43,"An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.","","","Tries to login to a non FTPS enabled FTP service without sending a
+  'AUTH TLS' command first and checks if the service is accepting the login without enforcing the use of
+  the 'AUTH TLS' command.
+Details:
+FTP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.108528)
+Version used: 2023-12-20T05:05:58Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,21,tcp,4.8,Medium,70,"Mitigation","FTP Unencrypted Cleartext Login","The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Non-anonymous sessions: 331 User openvasvt OK. Password required
+Anonymous sessions:     331 User anonymous OK. Password required
+
+The remote FTP service supports the 'AUTH TLS' command but isn't enforcing the use of it for:
+
+- Non-anonymous sessions
+- Anonymous sessions
+",1.3.6.1.4.1.25623.1.0.108528,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,715cbc63-8aa1-4319-bbf2-aa58b882251c,"An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.","","","Tries to login to a non FTPS enabled FTP service without sending a
+  'AUTH TLS' command first and checks if the service is accepting the login without enforcing the use of
+  the 'AUTH TLS' command.
+Details:
+FTP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.108528)
+Version used: 2023-12-20T05:05:58Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,21,tcp,4.8,Medium,70,"Mitigation","FTP Unencrypted Cleartext Login","The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Non-anonymous sessions: 331 User openvasvt OK. Password required
+Anonymous sessions:     331 User anonymous OK. Password required
+
+The remote FTP service supports the 'AUTH TLS' command but isn't enforcing the use of it for:
+
+- Non-anonymous sessions
+- Anonymous sessions
+",1.3.6.1.4.1.25623.1.0.108528,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,7f3a7f2e-cfbf-4e5d-b80d-28d8a0a048f5,"An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.","","","Tries to login to a non FTPS enabled FTP service without sending a
+  'AUTH TLS' command first and checks if the service is accepting the login without enforcing the use of
+  the 'AUTH TLS' command.
+Details:
+FTP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.108528)
+Version used: 2023-12-20T05:05:58Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,143,tcp,4.8,Medium,70,"Mitigation","IMAP Unencrypted Cleartext Login","The remote host is running an IMAP daemon that allows cleartext logins over
+  unencrypted connections.
+
+  NOTE: Valid credentials needs to given to the settings of 'Login configurations' OID: 1.3.6.1.4.1.25623.1.0.10870.","The remote IMAP server accepts logins via the following cleartext authentication mechanisms over unencrypted connections:
+
+AUTH=LOGIN
+AUTH=PLAIN
+
+The remote IMAP server supports the 'STARTTLS' command but isn't enforcing the use of it for the cleartext authentication mechanisms.
+",1.3.6.1.4.1.25623.1.0.15856,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,6f3bd2eb-fa88-4bdf-a945-73c8bd18fd8b,"An attacker can uncover user names and passwords by sniffing traffic to the IMAP
+  daemon if a less secure authentication mechanism (eg, LOGIN command, AUTH=PLAIN, AUTH=LOGIN) is used.","Configure the remote server to always enforce encrypted connections via
+  SSL/TLS with the 'STARTTLS' command.","","","
+Details:
+IMAP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.15856)
+Version used: 2023-08-01T13:29:10Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,443,tcp,5.0,Medium,70,"VendorFix","Non-Existent Page Physical Path Disclosure Vulnerability (HTTP)","The remote web server is prone to an information disclosure
+  vulnerability.","The following URL(s) have been determined to disclose a possible sensitive internal path:
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-2139646158/
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-2139646158/'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-2139646158/</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1092665802.html
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1092665802.html'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1092665802.html</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1995844378.htm
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1995844378.htm'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1995844378.htm</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-728358748.jsp
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-728358748.jsp'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-728358748.jsp</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1773315160.shtm
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1773315160.shtm'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1773315160.shtm</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-306861985.shtml
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-306861985.shtml'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-306861985.shtml</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-874298960.cfm
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-874298960.cfm'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-874298960.cfm</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1498500734.asp
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1498500734.asp'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1498500734.asp</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-127642097.aspx
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-127642097.aspx'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-127642097.aspx</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1839827575.php
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1839827575.php'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1839827575.php</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-2130449013.php3
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-2130449013.php3'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-2130449013.php3</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1415017607.php4
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1415017607.php4'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1415017607.php4</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-1530355185.php5
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-1530355185.php5'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-1530355185.php5</strong>                                </div>
+
+Vulnerable URL: https://www.vps-10959947.municipionavirai.com.br/non-existent-605781393.php7
+Concluded from the following response:
+
+<meta property=""fb:app_id"" content=""3332480240149923"" /><meta property=""og:type"" content=""article""/><meta property=""og:title"" content=""""/><meta property=""og:description"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas."" /><meta property=""og:url"" content=""""/><meta property=""og:site_name"" content=""| Portal disponibiliza dados e informaÃ\x0083Â§Ã\x0083Âµes Ã\x0083Â  gestÃ\x0083Â£o pÃ\x0083Âºblica do municÃ\x0083Â­pio. Sobre leis, contratos, licitaÃ\x0083Â§Ã\x0083Âµes, despesas, receitas e outras informaÃ\x0083Â§Ã\x0083Âµes pÃ\x0083Âºblicas.""/><meta property=""og:image"" content=""https://transparencia.navirai.ms.gov.br/wp-content/themes/tema_transparencia/inc/assets/images/plano-fundo-da-transparencia-de-navirai-1980p.jpg""/><meta property=""og:locale"" ""content =""pt_BR""/><link rel='canonical' href='https://www.vps-10959947.municipionavirai.com.br/non-existent-605781393.php7'><script type=""text/javascript"">
+                                    Entre em em contato com a equipe de Suporte aos Sites Oficiais do NÃ\x0083Âºcleo de InformÃ\x0083Â¡tica para mais informaÃ\x0083Â§Ã\x0083Âµes. Copie o endereÃ\x0083Â§o vermelho e cole em um de nossos canais de atendimento abaixo: <strong style='color:red;'>http://www.vps-10959947.municipionavirai.com.br/non-existent-605781393.php7</strong>                                </div>
+",1.3.6.1.4.1.25623.1.0.11714,"CVE-2001-1372,CVE-2002-0266,CVE-2002-2008,CVE-2003-0456",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,7a4a953a-1aa3-4cca-bbb2-4d157059202a,"","Update the server or reconfigure it. Please contact the vendor
+  of the product for more info.","The following products are known to be vulnerable:
+
+  - No CVE: Pi3Web version 2.0.0
+
+  - CVE-2001-1372: Oracle 9i Application Server 1.0.2
+
+  - CVE-2002-0266: Thunderstone Texis
+
+  - CVE-2002-2008: Apache Tomcat 4.0.3 for Windows
+
+  - CVE-2003-0456: VisNetic WebSite 3.5
+
+  Other products or versions might be affected as well.","The remote web server reveals the physical path of the webroot
+  when asked for a non-existent page.
+
+  Whilst printing errors to the output is useful for debugging applications, this feature should not
+  be enabled on production servers.","Sends multiple crafted HTTP GET requests and checks the
+  responses.
+Details:
+Non-Existent Page Physical Path Disclosure Vulnerability (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.11714)
+Version used: 2024-07-26T05:05:35Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,110,tcp,4.8,Medium,70,"Mitigation","POP3 Unencrypted Cleartext Login","The remote host is running a POP3 daemon that allows cleartext logins over
+  unencrypted connections.
+
+  NOTE: Depending on the POP3 server configuration valid credentials needs to be given to the settings of
+  'Login configurations' OID: 1.3.6.1.4.1.25623.1.0.10870.","The remote POP3 server accepts logins via the following cleartext authentication mechanisms over unencrypted connections:
+
+USER
+SASL PLAIN LOGIN
+
+The remote POP3 server supports the 'STLS' command but isn't enforcing the use of it for the cleartext authentication mechanisms.
+",1.3.6.1.4.1.25623.1.0.15855,"",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,0459ad37-4959-48dc-8144-405199b58357,"An attacker can uncover user names and passwords by sniffing traffic to the POP3
+  daemon if a less secure authentication mechanism (eg, USER command, AUTH PLAIN, AUTH LOGIN) is used.","Configure the remote server to always enforce encrypted connections via
+  SSL/TLS with the 'STLS' command.","","","
+Details:
+POP3 Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.15855)
+Version used: 2023-08-03T05:05:16Z
+","","","",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,587,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,4f197599-41c9-4a90-98f9-33d1e94a44cc,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,587,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,24038ccd-5c41-4f5b-b89c-7e6c99fd17d2,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,587,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,78f59e1c-4b32-4a9d-aae4-b92a276ef44f,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,143,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,e9ad4b66-bf96-4c17-ba6a-56e759c45860,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,143,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,8367b0d2-cfeb-43b8-a9ff-657008c70a08,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,143,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,c6b32e86-1242-4cb5-bde9-93ae453b56cb,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,110,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,dd97d301-88c8-4aa1-9014-0bc4937d27ae,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,110,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,4e9ae179-7e5f-4cdd-b752-0e2a9fecfef2,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,110,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,7ba5536e-facf-4b00-b71b-e79338b5a8f4,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-1591,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,465,tcp,5.9,Medium,98,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted
+  by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port
+  25/tcp is reported. If too strong cipher suites are configured for this service the alternative
+  would be to fall back to an even more insecure cleartext communication.","'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+
+",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566,CVE-2015-2808,CVE-2015-4000",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,41316f61-ded8-480f-9d6c-4487f52ef891,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2023-2939,DFN-CERT-2021-0775,DFN-CERT-2020-1561,DFN-CERT-2020-1276,DFN-CERT-2017-1821,DFN-CERT-2016-1692,DFN-CERT-2016-1648,DFN-CERT-2016-1168,DFN-CERT-2016-0665,DFN-CERT-2016-0642,DFN-CERT-2016-0184,DFN-CERT-2016-0135,DFN-CERT-2016-0101,DFN-CERT-2016-0035,DFN-CERT-2015-1853,DFN-CERT-2015-1679,DFN-CERT-2015-1632,DFN-CERT-2015-1608,DFN-CERT-2015-1542,DFN-CERT-2015-1518,DFN-CERT-2015-1406,DFN-CERT-2015-1341,DFN-CERT-2015-1194,DFN-CERT-2015-1144,DFN-CERT-2015-1113,DFN-CERT-2015-1078,DFN-CERT-2015-1067,DFN-CERT-2015-1038,DFN-CERT-2015-1016,DFN-CERT-2015-1012,DFN-CERT-2015-0980,DFN-CERT-2015-0977,DFN-CERT-2015-0976,DFN-CERT-2015-0960,DFN-CERT-2015-0956,DFN-CERT-2015-0944,DFN-CERT-2015-0937,DFN-CERT-2015-0925,DFN-CERT-2015-0884,DFN-CERT-2015-0881,DFN-CERT-2015-0879,DFN-CERT-2015-0866,DFN-CERT-2015-0844,DFN-CERT-2015-0800,DFN-CERT-2015-0737,DFN-CERT-2015-0696,DFN-CERT-2014-0977,CB-K21/0067,CB-K19/0812,CB-K17/1750,CB-K16/1593,CB-K16/1552,CB-K16/1102,CB-K16/0617,CB-K16/0599,CB-K16/0168,CB-K16/0121,CB-K16/0090,CB-K16/0030,CB-K15/1751,CB-K15/1591,CB-K15/1550,CB-K15/1517,CB-K15/1514,CB-K15/1464,CB-K15/1442,CB-K15/1334,CB-K15/1269,CB-K15/1136,CB-K15/1090,CB-K15/1059,CB-K15/1022,CB-K15/1015,CB-K15/0986,CB-K15/0964,CB-K15/0962,CB-K15/0932,CB-K15/0927,CB-K15/0926,CB-K15/0907,CB-K15/0901,CB-K15/0896,CB-K15/0889,CB-K15/0877,CB-K15/0850,CB-K15/0849,CB-K15/0834,CB-K15/0827,CB-K15/0802,CB-K15/0764,CB-K15/0733,CB-K15/0667,CB-K14/0935,CB-K13/0942",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,587,tcp,5.9,Medium,98,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted
+  by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port
+  25/tcp is reported. If too strong cipher suites are configured for this service the alternative
+  would be to fall back to an even more insecure cleartext communication.","'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+
+",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566,CVE-2015-2808,CVE-2015-4000",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,0e327058-1b5a-4e37-9d56-bc06986d11e4,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2023-2939,DFN-CERT-2021-0775,DFN-CERT-2020-1561,DFN-CERT-2020-1276,DFN-CERT-2017-1821,DFN-CERT-2016-1692,DFN-CERT-2016-1648,DFN-CERT-2016-1168,DFN-CERT-2016-0665,DFN-CERT-2016-0642,DFN-CERT-2016-0184,DFN-CERT-2016-0135,DFN-CERT-2016-0101,DFN-CERT-2016-0035,DFN-CERT-2015-1853,DFN-CERT-2015-1679,DFN-CERT-2015-1632,DFN-CERT-2015-1608,DFN-CERT-2015-1542,DFN-CERT-2015-1518,DFN-CERT-2015-1406,DFN-CERT-2015-1341,DFN-CERT-2015-1194,DFN-CERT-2015-1144,DFN-CERT-2015-1113,DFN-CERT-2015-1078,DFN-CERT-2015-1067,DFN-CERT-2015-1038,DFN-CERT-2015-1016,DFN-CERT-2015-1012,DFN-CERT-2015-0980,DFN-CERT-2015-0977,DFN-CERT-2015-0976,DFN-CERT-2015-0960,DFN-CERT-2015-0956,DFN-CERT-2015-0944,DFN-CERT-2015-0937,DFN-CERT-2015-0925,DFN-CERT-2015-0884,DFN-CERT-2015-0881,DFN-CERT-2015-0879,DFN-CERT-2015-0866,DFN-CERT-2015-0844,DFN-CERT-2015-0800,DFN-CERT-2015-0737,DFN-CERT-2015-0696,DFN-CERT-2014-0977,CB-K21/0067,CB-K19/0812,CB-K17/1750,CB-K16/1593,CB-K16/1552,CB-K16/1102,CB-K16/0617,CB-K16/0599,CB-K16/0168,CB-K16/0121,CB-K16/0090,CB-K16/0030,CB-K15/1751,CB-K15/1591,CB-K15/1550,CB-K15/1517,CB-K15/1514,CB-K15/1464,CB-K15/1442,CB-K15/1334,CB-K15/1269,CB-K15/1136,CB-K15/1090,CB-K15/1059,CB-K15/1022,CB-K15/1015,CB-K15/0986,CB-K15/0964,CB-K15/0962,CB-K15/0932,CB-K15/0927,CB-K15/0926,CB-K15/0907,CB-K15/0901,CB-K15/0896,CB-K15/0889,CB-K15/0877,CB-K15/0850,CB-K15/0849,CB-K15/0834,CB-K15/0827,CB-K15/0802,CB-K15/0764,CB-K15/0733,CB-K15/0667,CB-K14/0935,CB-K13/0942",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,21,tcp,5.9,Medium,98,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted
+  by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port
+  25/tcp is reported. If too strong cipher suites are configured for this service the alternative
+  would be to fall back to an even more insecure cleartext communication.","'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_ECDH_anon_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+
+",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566,CVE-2015-2808,CVE-2015-4000",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,411c8e03-a5a3-4742-9041-ad35fa622a06,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: 2024-09-27T05:05:23Z
+","","","DFN-CERT-2023-2939,DFN-CERT-2021-0775,DFN-CERT-2020-1561,DFN-CERT-2020-1276,DFN-CERT-2017-1821,DFN-CERT-2016-1692,DFN-CERT-2016-1648,DFN-CERT-2016-1168,DFN-CERT-2016-0665,DFN-CERT-2016-0642,DFN-CERT-2016-0184,DFN-CERT-2016-0135,DFN-CERT-2016-0101,DFN-CERT-2016-0035,DFN-CERT-2015-1853,DFN-CERT-2015-1679,DFN-CERT-2015-1632,DFN-CERT-2015-1608,DFN-CERT-2015-1542,DFN-CERT-2015-1518,DFN-CERT-2015-1406,DFN-CERT-2015-1341,DFN-CERT-2015-1194,DFN-CERT-2015-1144,DFN-CERT-2015-1113,DFN-CERT-2015-1078,DFN-CERT-2015-1067,DFN-CERT-2015-1038,DFN-CERT-2015-1016,DFN-CERT-2015-1012,DFN-CERT-2015-0980,DFN-CERT-2015-0977,DFN-CERT-2015-0976,DFN-CERT-2015-0960,DFN-CERT-2015-0956,DFN-CERT-2015-0944,DFN-CERT-2015-0937,DFN-CERT-2015-0925,DFN-CERT-2015-0884,DFN-CERT-2015-0881,DFN-CERT-2015-0879,DFN-CERT-2015-0866,DFN-CERT-2015-0844,DFN-CERT-2015-0800,DFN-CERT-2015-0737,DFN-CERT-2015-0696,DFN-CERT-2014-0977,CB-K21/0067,CB-K19/0812,CB-K17/1750,CB-K16/1593,CB-K16/1552,CB-K16/1102,CB-K16/0617,CB-K16/0599,CB-K16/0168,CB-K16/0121,CB-K16/0090,CB-K16/0030,CB-K15/1751,CB-K15/1591,CB-K15/1550,CB-K15/1517,CB-K15/1514,CB-K15/1464,CB-K15/1442,CB-K15/1334,CB-K15/1269,CB-K15/1136,CB-K15/1090,CB-K15/1059,CB-K15/1022,CB-K15/1015,CB-K15/0986,CB-K15/0964,CB-K15/0962,CB-K15/0932,CB-K15/0927,CB-K15/0926,CB-K15/0907,CB-K15/0901,CB-K15/0896,CB-K15/0889,CB-K15/0877,CB-K15/0850,CB-K15/0849,CB-K15/0834,CB-K15/0827,CB-K15/0802,CB-K15/0764,CB-K15/0733,CB-K15/0667,CB-K14/0935,CB-K13/0942",""
+162.240.236.192,www.vps-10959947.municipionavirai.com.br,443,tcp,5.0,Medium,80,"VendorFix","WordPress < 6.5 Private Information Exposure Vulnerability","WordPress is prone to a private information exposure via
+  'redirect_guess_404_permalink()'.","Installed version: 6.4.5
+Fixed version:     6.5
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.114477,"CVE-2023-5692",1a447389-4025-4e6a-8517-4f097d01cdd8,"2",2024-10-29T19:00:16Z,af0ef931-f980-48e2-841e-49a6650fffb4,"This can allow unauthenticated attackers to expose the slug of a
+  custom post whose 'publicly_queryable' post status has been set to 'false'.","Update to version 6.5 or later.
+
+  Note: As of 04/2024 the security fix is only available in version 6.5 and haven't been
+  'backported' to older versions yet.","WordPress versions prior to 6.5.","When guessing the proper URL to redirect a 404, WordPress only
+  considers the post statuses and not the proper post type privacy settings, leading to potential
+  information disclosure.","Checks if a vulnerable version is present on the target host.
+Details:
+WordPress < 6.5 Private Information Exposure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.114477)
+Version used: 2024-04-10T05:05:22Z
+","","","WID-SEC-2024-0808",""
