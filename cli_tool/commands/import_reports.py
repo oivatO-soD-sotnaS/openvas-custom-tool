@@ -24,7 +24,7 @@ def download_cvs():
 
       for report in reports.xpath("report"):
           report_id = report.get("id")
-          response: get_reports_response = gmp.get_report(
+          response = gmp.get_report(
               report_id,
               report_format_id="c1645568-627a-11e3-a660-406186ea4fc5",
               ignore_pagination=True,
@@ -39,7 +39,7 @@ def download_cvs():
               decoded_data = base64.b64decode(base64_string)
               
               # Salve o conteúdo decodificado em um arquivo
-              output_file = f'../../data/{report_id}.cvs'
+              output_file = f'data/{report_id}.cvs'
               with open(output_file, "wb") as f:
                   f.write(decoded_data)
       print("Download dos reports concluído com sucesso!")
@@ -50,11 +50,10 @@ def download_cvs():
         
 
 def import_to_db():
-   
    pass
+
+
 def main():
-  download_cvs()
-  import_to_db()
   pass
 
 
