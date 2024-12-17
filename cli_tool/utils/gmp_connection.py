@@ -62,13 +62,13 @@ class GMPConnection:
 
 # Exemplo de uso
 if __name__ == "__main__":
-    GMP_USER = os.getenv('GMP_USER')
-    GMP_PASS = os.getenv('GMP_PASS')
-
     # Testando a conexão
     GMPConnection.test_connection()
     
     # Executando operações com o GMP
+    GMP_USER = os.getenv('GMP_USER')
+    GMP_PASS = os.getenv('GMP_PASS')
+
     try:
         with GMPConnection.get_connection() as gmp:
             gmp.authenticate(GMP_USER, GMP_PASS)
