@@ -60,22 +60,5 @@ class GMPConnection:
             print("Erro ao testar conexão com o GMP:", e, file=sys.stderr)
             return False
 
-# Exemplo de uso
 if __name__ == "__main__":
-    # Testando a conexão
     GMPConnection.test_connection()
-    
-    # Executando operações com o GMP
-    GMP_USER = os.getenv('GMP_USER')
-    GMP_PASS = os.getenv('GMP_PASS')
-
-    try:
-        with GMPConnection.get_connection() as gmp:
-            gmp.authenticate(GMP_USER, GMP_PASS)
-            reports = gmp.get_reports()
-
-            for report in reports.xpath('report'):
-                print(report.get('id'))
-
-    except GvmError as e:
-        print('An error occurred:', e, file=sys.stderr)

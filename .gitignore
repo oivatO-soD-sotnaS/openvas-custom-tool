@@ -9,3 +9,6 @@ venv/
 
 # environment variables
 .env
+
+# csv files
+*.csv

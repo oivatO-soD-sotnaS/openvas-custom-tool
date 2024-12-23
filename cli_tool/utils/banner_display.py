@@ -7,7 +7,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from assets.banners import banners  # Importa os banners
-def display_banner():
+
+def banner():
     colors = [
         "cyan",
         "magenta",

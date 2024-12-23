@@ -5,7 +5,9 @@ from rich import print
 from rich.prompt import Prompt
 from rich.console import Console
 from rich.panel import Panel
+from rich.padding import Padding
 from dotenv import load_dotenv
+from InquirerPy import inquirer
 
 # Add the project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
@@ -22,165 +24,162 @@ def configure(
     database: Annotated[Optional[bool], typer.Option("--database", help="Configure database connection")] = False,
 ) -> None:
     """
-    Configure environment variables. --gmp to configure GMP, --database to configure database.
-    
+    Configure environment variables for GMP and database connections.
+
+    This function updates the necessary environment variables based on user input.
+    If neither --gmp nor --database is specified, both configurations will be prompted.
+
     Args:
-        gmp: Whether to configure GMP connection (default is False).
-        database: Whether to configure database connection (default is False).
+        gmp (bool): Flag to configure GMP connection.
+        database (bool): Flag to configure database connection.
     """
     if gmp:
-        print("[cyan]Configuring GMP...[/cyan]")
         if config_gmp():
             print("[cyan bold]GMP variables updated successfully!")
 
     if database:
-        print("[cyan]Configuring database...[/cyan]")
         if config_database():
             print("[cyan bold]Database variables updated successfully!")
 
     if not gmp and not database:
-        print("[cyan]Configuring both GMP and database...[/cyan]")
         if config_gmp():
             print("[cyan bold]GMP variables updated successfully!")
+        
         if config_database():
             print("[cyan bold]Database variables updated successfully!")
+    
+    print(Panel("[red]The passwords are stored unencrypted at[/red] [cyan bold]openvas-custom-tool/cli_tool/.env", title="WARNING!", border_style="bold red", title_align="left", width=80))
     typer.Exit()
 
-def config_gmp()-> bool:
+def config_gmp() -> bool:
     """
-    Configures the GMP environment variables in .env with user input 
-    
-    :return True if the gmp variables were updated successfully, False if not
+    Configure GMP environment variables in the .env file based on user input.
+
+    Prompts the user for GMP credentials and socket path, and updates the .env file accordingly.
+
+    Returns:
+        bool: True if GMP variables were updated successfully, False otherwise.
     """
+    print(Padding("[bold]Configuring GMP...[/bold]", (1, 1), style="on blue", expand=False))
 
     username = Prompt.ask("Enter your username", default=os.getenv("GMP_USER"))
     passwd = Prompt.ask("Enter your password", default=os.getenv("GMP_PASS"), password=True)
 
-    socket_search_type = Prompt.ask("Enter the socket search type", choices=["manual", "auto"], default="auto")
-    if socket_search_type == "auto":
+    socket_search_type = inquirer.select(
+        message="Select a socket search type (up/down to select and enter to confirm):",
+        choices=["Manual", "Automatic"],
+        pointer=">",
+        default="Automatic",
+    ).execute()    
+    if socket_search_type == "Automatic":
         socket = find_gmp_socket_with_spinner()
         if not socket:
             print("[red bold]GMP credentials not updated")
             return False
     else:
         socket = Prompt.ask("Enter the gvmd.sock file path", default="/var/run/gvmd/gvmd.sock")
-    # Update GMP user    
-    update_env_file("cli_tool/.env", "GMP_USER", username)
 
-    # Update GMP user    
+    update_env_file("cli_tool/.env", "GMP_USER", username)
     update_env_file("cli_tool/.env", "GMP_PASS", passwd)
 
     if not socket:
         print("[red]gvmd.sock file not found")
         return False
     
-    # Update GMP socket path    
     update_env_file("cli_tool/.env", "GMP_SOCKET", socket)
-
-    print(Panel("[red]The passwords are stored unencrypted at[/red] [cyan bold]openvas-custom-tool/cli_tool/.env", title="WARNING!", border_style="bold red", title_align="left", width=80))
-    
-    # GMP credentials updated correctly
     return True
 
-def config_database() -> True:
+def config_database() -> bool:
     """
-    Configures the database environment variables in .env with user input 
-    
-    :return True if the database variables were updated successfully, False if not
+    Configure database environment variables in the .env file based on user input.
+
+    Prompts the user for database details such as engine, URL, username, password, and database name.
+    Updates the .env file with the provided values.
+
+    Returns:
+        bool: True if database variables were updated successfully, False otherwise.
     """
-    db_engine = Prompt.ask("Enter the database engine", choices=["mysql", "postgres"], default="mysql")
+    print(Padding("[bold]Configuring database...[/bold]", (1, 1), style="on blue", expand=False))
+
+    db_engine = inquirer.select(
+        message="Select your database engine (up/down to select and enter to confirm):",
+        choices=["mysql", "postgres"],
+        pointer=">",  # Pointer for selection
+        default="MySQL",  # Default selection
+    ).execute()
 
     db_url = Prompt.ask("Enter the database URL", default=f"localhost:{"3306" if db_engine == "mysql" else "5432"}")
-
     db_user = Prompt.ask("Enter your username", default=os.getenv("DB_USER"))
-
     db_pass = Prompt.ask("Enter your password", default=os.getenv("DB_PASS"), password=True)
-
     db_database = Prompt.ask("Enter the database name", default=os.getenv("DB_DATABASE"))
 
-    # update the database engine
     update_env_file("cli_tool/.env", "DB_ENGINE", db_engine)
-
-    # update the database URL
     update_env_file("cli_tool/.env", "DB_URL", db_url)
-
-    # update the database user
     update_env_file("cli_tool/.env", "DB_USER", db_user)
-    
-    # update the database password
     update_env_file("cli_tool/.env", "DB_PASS", db_pass)
-
-    # update the database
     update_env_file("cli_tool/.env", "DB_DATABASE", db_database)
-
-    print(Panel("[red]The passwords are stored unencrypted at[/red] [cyan bold]openvas-custom-tool/cli_tool/.env", title="WARNING!", border_style="bold red", title_align="left", width=80))
     
-    # Database credentials updated correctly
     return True
-    
 
 def update_env_file(file_path: str, key: str, value: str) -> None:
     """
-    Update or add a key-value pair in a .env file.
+    Update or add a key-value pair in the .env file.
+
+    Reads the existing .env file (if any), updates the specified key with the given value, or adds it if not present.
+    Writes the updated content back to the file.
 
     Args:
-        file_path (str): Path to the .env file.fit
+        file_path (str): Path to the .env file.
+        key (str): Key to search and update.
+        value (str): Value to assign to the key.
     """
-    # Read the .env file if it exists
     if os.path.exists(file_path):
         with open(file_path, "r") as file:
             lines = file.readlines()
     else:
         lines = []
-    
+
     key_found = False
     new_lines = []
-    
+
     for line in lines:
         if line.strip().startswith(f"{key}="):
-            # Update the value for the existing key
             new_lines.append(f"{key}={value}\n")
             key_found = True
         else:
             new_lines.append(line)
-    
-    # Add the key-value pair if it wasn't found
+
     if not key_found:
         new_lines.append(f"{key}={value}\n")
-    
-    # Write back to the .env file
+
     with open(file_path, "w") as file:
         file.writelines(new_lines)
 
+def find_gmp_socket_with_spinner() -> Optional[str]:
+    """
+    Search for the GMP socket file using a spinner.
 
-def find_gmp_socket_with_spinner() -> str | None:
+    This function attempts to locate the `gvmd.sock` file on the system, prompting the user to run the script with sudo if necessary.
+
+    Returns:
+        Optional[str]: Path to the `gvmd.sock` file if found, None otherwise.
     """
-    Searches for the GMP socket file with a spinner while waiting.
-    """
-    # Check if the script is run as root
     if os.geteuid() != 0:
         print("[red]Permission denied when searching. Try running as sudo.")
         return None
-    
+
     console = Console()
-    
-    
-    # Start the spinner
+
     with console.status("[bold cyan]Searching for gvmd.sock...", spinner="bouncingBar"):
-        console.print(f"[cyan]Searching for gvmd.sock...", end=" ",)
-        
         try:
-            # Run the find command
             result = subprocess.run(
                 ["find", "/", "-name", "gvmd.sock"],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
-                check=False  # Don't raise error on non-zero exit status
+                check=False 
             )
 
-
-            # Display result after search
             socket_path = result.stdout.strip()
             if socket_path:
                 console.print(f"[green]GMP socket found at: {socket_path}")
